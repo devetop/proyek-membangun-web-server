@@ -49,12 +49,24 @@ aws ec2 run-instances --image-id ami-082b1f4237bd816a1 --instance-type t2.micro 
 
 Beri nama/tags instance
 
-![](https://i.imgur.com/NNttgjj.png)
+[![](https://i.imgur.com/NNttgjj.png)]
 
 **Instance Web Service**
 1. Install Apache pada Instance Web Service
 ```sh
 sudo apt install apache2
+```
+2. Edit listen port menjadi 8000
+```sh
+sudo nano /etc/apache2/ports.conf
+``` 
+```plaintext
+# If you just change the port or add more ports here, you will likely also
+# have to change the VirtualHost statement in
+# /etc/apache2/sites-enabled/000-default.conf
+
+#Listen 80
+Listen 8000
 ```
 
 **Instance Reserve Proxy**
