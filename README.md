@@ -25,26 +25,18 @@ Instance Reserve Proxy
 
 ```json
 [
-    [
-        "i-0e4879ae9d642386a",
-        "52.77.211.247",
-        [
-            {
-                "Key": "Name",
-                "Value": "Web Service"
-            }
-        ]
-    ],
-    [
-        "i-0ac6f314402af1de6",
-        "54.254.255.142",
-        [
-            {
-                "Key": "Name",
-                "Value": "Reverse Proxy"
-            }
-        ]
-    ]
+    {
+        "Instance": "i-0e4879ae9d642386a",
+        "Nama": "Web Service",
+        "privateip": "172.31.43.134",
+        "publicip": "52.77.211.247"
+    },
+    {
+        "Instance": "i-0ac6f314402af1de6",
+        "Nama": "Reverse Proxy",
+        "privateip": "172.31.39.10",
+        "publicip": "54.254.255.142"
+    }
 ]
 ```
 
