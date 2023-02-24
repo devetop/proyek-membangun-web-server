@@ -31,4 +31,4 @@ aws ec2 run-instances --image-id ami-082b1f4237bd816a1 --instance-type t2.micro 
 ```
 
 2. Beri nama/tags instance
-[](/img/Screen Shot 2023-02-25 at 03.54.13.png)
+![](/img/Screen Shot 2023-02-25 at 03.54.13.png)
