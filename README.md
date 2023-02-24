@@ -42,22 +42,23 @@ Instance Reserve Proxy
 
 Instalasi:
 
-1. Launch Instance EC2
+Launch Instance EC2
 ```sh
 aws ec2 run-instances --image-id ami-082b1f4237bd816a1 --instance-type t2.micro --key-name erpan --subnet-id subnet-09ef7060c82762b9e --count 2
 ```
 
-2. Beri nama/tags instance
-[![](https://i.imgur.com/NNttgjj.png)]
+Beri nama/tags instance
 
-3. Install Apache pada Instance Web Service
+![](https://i.imgur.com/NNttgjj.png)
+
+**Instance Web Service**
+1. Install Apache pada Instance Web Service
 ```sh
 sudo apt install apache2
 ```
 
-4. Install Nginx pada Instance Reserve Proxy
+**Instance Reserve Proxy**
+1. Install Nginx pada Instance Reserve Proxy
 ```sh
 sudo apt install nginx
 ```
-
-5. 
