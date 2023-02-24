@@ -16,12 +16,37 @@ Detail Spesifikasi:
 Instance Web Service
    * 1 vCPUs
    * 1 GiB Memory
-   * GiB Storage
+   * 8 GiB Storage
 
 Instance Reserve Proxy
    * 1 vCPUs
    * 1 GiB Memory
-   * GiB Storage
+   * 8 GiB Storage
+
+```json
+[
+    [
+        "i-0e4879ae9d642386a",
+        "52.77.211.247",
+        [
+            {
+                "Key": "Name",
+                "Value": "Web Service"
+            }
+        ]
+    ],
+    [
+        "i-0ac6f314402af1de6",
+        "54.254.255.142",
+        [
+            {
+                "Key": "Name",
+                "Value": "Reverse Proxy"
+            }
+        ]
+    ]
+]
+```
 
 Instalasi:
 
@@ -32,3 +57,15 @@ aws ec2 run-instances --image-id ami-082b1f4237bd816a1 --instance-type t2.micro 
 
 2. Beri nama/tags instance
 [![](https://i.imgur.com/NNttgjj.png)]
+
+3. Install Apache pada Instance Web Service
+```sh
+sudo apt install apache2
+```
+
+4. Install Nginx pada Instance Reserve Proxy
+```sh
+sudo apt install nginx
+```
+
+5. 
