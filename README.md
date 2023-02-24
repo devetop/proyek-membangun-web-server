@@ -68,6 +68,18 @@ sudo nano /etc/apache2/ports.conf
 #Listen 80
 Listen 8000
 ```
+3. Restart service apache
+```sh
+sudo systemctl restart apache2
+```
+4. Cek listen port dengan perintah `ss`
+```sh
+ss -plntu  | grep -i 8000
+```
+```plaintext
+tcp   LISTEN 0      511                     *:8000            *:*
+```
+
 
 **Instance Reserve Proxy**
 1. Install Nginx pada Instance Reserve Proxy
