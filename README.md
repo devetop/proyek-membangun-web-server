@@ -12,15 +12,16 @@ Teknologi yang digunakan:
 * OS Ubuntu Server 22.04 LTS
 
 Detail Spesifikasi:
+
 Instance Web Service 
-    * 1 vCPUs
-    * 1 GiB Memory 
-    * GiB Storage
+   * 1 vCPUs
+   * 1 GiB Memory 
+   * GiB Storage
 
 Instance Reserve Proxy
-    * 1 vCPUs
-    * 1 GiB Memory 
-    * GiB Storage
+   * 1 vCPUs
+   * 1 GiB Memory 
+   * GiB Storage
 
 Instalasi:
 
