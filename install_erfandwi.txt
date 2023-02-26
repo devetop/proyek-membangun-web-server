@@ -14,4 +14,35 @@ Detail Spesifikasi:
 
 Instance terpasang IP Private 172.26.13.149 dan IP Public 54.254.160.129
 
+Instalasi:
 
+1. Cloning repositori GitHub yang sudah disediakan oleh Dicoding
+```sh
+git clone https://github.com/dicodingacademy/a387-jarkom-labs.git
+```
+2. Jalankan `apt update`
+```sh
+sudo apt update
+```
+3. Install Nginx
+```sh
+sudo apt install nginx
+```
+4. Memastikan web server dapat diakses
+![](https://imgur.com/G8qPyTg.png)
+5. Install NodeJs
+```sh
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\
+sudo apt-get install -y nodejs
+```
+6. Jalankan `npm install` pada folder a387-jarkom-labs yang di clone sebelumnya dari repo github
+```sh
+npm install
+```
+7. Tambahkan Custom port TCP 8000 pada Firewall Instance
+![](https://imgur.com/QArPvy3.png)
+8. Memastikan web server NodeJs dapat diakses
+```sh
+npm run start
+```
+![](https://imgur.com/Xl8TrCP.png)
