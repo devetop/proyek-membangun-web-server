@@ -1,0 +1,17 @@
+# Submission Proyek Membangun Web Server
+
+Deskripsi:
+Menyiapkan 1 Instance menggunakan AWS Lightsail. Install Nginx untuk Reverse Proxy web server NodeJS.
+Install NodeJS versi 18 untuk run app.js. Setting limit access pada Nginx
+
+OS yang digunakan:
+* Ubuntu 20.04 LTS
+
+Detail Spesifikasi:
+* 2 GiB Memory
+* 1 vCPU
+* 60 GiB SSD
+
+Instance terpasang IP Private 172.26.13.149 dan IP Public 54.254.160.129
+
+
